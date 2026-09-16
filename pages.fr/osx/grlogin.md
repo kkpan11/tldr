@@ -1,7 +1,7 @@
 # grlogin
 
-> Cette commande est un alias de `-p linux rlogin`.
+> Cette commande est un alias de `rlogin` de GNU.
 
-- Voir la documentation de la commande originale :
+- Affiche la documentation de la commande originale :
 
-`tldr -p linux rlogin`
+`tldr {{[-p|--platform]}} linux rlogin`

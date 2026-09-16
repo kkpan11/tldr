@@ -1,7 +1,7 @@
 # docker service
 
 > Gerenciar os serviços em um daemon do Docker.
-> Mais informações: <https://docs.docker.com/engine/reference/commandline/service/>.
+> Mais informações: <https://docs.docker.com/reference/cli/docker/service/>.
 
 - Lista os serviços em um daemon do Docker:
 
@@ -13,11 +13,11 @@
 
 - Exibe informações detalhadas de uma lista separada por espaços de serviços:
 
-`docker service inspect {{nome_do_serviço|ID}}`
+`docker service inspect {{nome_do_serviço|id}}`
 
 - Lista as tarefas de uma lista separada por espaços de serviços:
 
-`docker service ps {{nome_do_serviço|ID}}`
+`docker service ps {{nome_do_serviço|id}}`
 
 - Escala para um número específico de réplicas para uma lista separada por espaços de serviços:
 
@@ -25,4 +25,4 @@
 
 - Remove uma lista separada por espaços de serviços:
 
-`docker service rm {{nome_do_serviço|ID}}`
+`docker service rm {{nome_do_serviço|id}}`

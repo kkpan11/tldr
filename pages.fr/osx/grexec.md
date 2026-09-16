@@ -1,7 +1,7 @@
 # grexec
 
-> Cette commande est un alias de `-p linux rexec`.
+> Cette commande est un alias de `rexec` de GNU.
 
-- Voir la documentation de la commande originale :
+- Affiche la documentation de la commande originale :
 
-`tldr -p linux rexec`
+`tldr {{[-p|--platform]}} linux rexec`

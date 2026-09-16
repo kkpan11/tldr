@@ -7,14 +7,14 @@
 
 `perldoc -{{f|v|a}} {{name}}`
 
-- Search in the question headings of Perl FAQ:
+- Search in the [q]uestion headings of Perl FAQ:
 
 `perldoc -q {{regex}}`
 
 - Send output directly to `stdout` (by default, it is send to a pager):
 
-`perldoc -T {{page|module|program|URL}}`
+`perldoc -T {{page|module|program|url}}`
 
 - Specify the language code of the desired translation:
 
-`perldoc -L {{language_code}} {{page|module|program|URL}}`
+`perldoc -L {{language_code}} {{page|module|program|url}}`

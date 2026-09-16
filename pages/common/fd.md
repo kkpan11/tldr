@@ -1,29 +1,37 @@
 # fd
 
-> An alternative to `find`.
-> Aims to be faster and easier to use than `find`.
-> More information: <https://github.com/sharkdp/fd>.
+> Find entries in the filesystem.
+> See also: `find`, `regex`.
+> More information: <https://github.com/sharkdp/fd#command-line-options>.
 
 - Recursively find files matching a specific pattern in the current directory:
 
-`fd "{{string|regex}}"`
-
-- Find files that begin with `foo`:
-
-`fd "^foo"`
-
-- Find files with a specific extension:
-
-`fd --extension txt`
+`fd "{{regex}}"`
 
 - Find files in a specific directory:
 
-`fd "{{string|regex}}" {{path/to/directory}}`
+`fd "{{regex}}" {{path/to/directory}}`
+
+- Find files with a specific extension:
+
+`fd {{[-e|--extension]}} {{txt}}`
+
+- Find only directories matching a specific pattern:
+
+`fd "{{regex}}" {{[-t|--type]}} {{[d|directory]}}`
 
 - Include ignored and hidden files in the search:
 
-`fd --hidden --no-ignore "{{string|regex}}"`
+`fd "{{regex}}" {{[-HI|--hidden --no-ignore]}}`
+
+- Exclude files that match a specific glob pattern:
+
+`fd "{{regex}}" {{[-E|--exclude]}} {{glob}}`
 
 - Execute a command on each search result returned:
 
-`fd "{{string|regex}}" --exec {{command}}`
+`fd "{{regex}}" {{[-x|--exec]}} {{command}}`
+
+- Find files only in the current directory:
+
+`fd "{{regex}}" {{[-d|--max-depth]}} 1`

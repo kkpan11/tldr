@@ -7,7 +7,7 @@
 
 `k8sec list`
 
-- List a specific secret as a base64-encoded string:
+- List a specific secret as a Base64-encoded string:
 
 `k8sec list {{secret_name}} --base64`
 
@@ -15,7 +15,7 @@
 
 `k8sec set {{secret_name}} {{key=value}}`
 
-- Set a base64-encoded value:
+- Set a Base64-encoded value:
 
 `k8sec set --base64 {{secret_name}} {{key=encoded_value}}`
 
@@ -25,8 +25,8 @@
 
 - Load secrets from a file:
 
-`k8sec load -f {{path/to/file}} {{secret_name}}`
+`k8sec load {{[-f|--filename]}} {{path/to/file}} {{secret_name}}`
 
 - Dump secrets to a file:
 
-`k8sec dump -f {{path/to/file}} {{secret_name}}`
+`k8sec dump {{[-f|--filename]}} {{path/to/file}} {{secret_name}}`

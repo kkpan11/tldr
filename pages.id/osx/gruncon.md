@@ -1,7 +1,7 @@
 # gruncon
 
-> Perintah ini merupakan alias dari `-p linux runcon`.
+> Perintah ini merupakan alias dari GNU `runcon`.
 
 - Tampilkan dokumentasi untuk perintah asli:
 
-`tldr -p linux runcon`
+`tldr {{[-p|--platform]}} linux runcon`

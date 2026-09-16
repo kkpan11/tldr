@@ -1,7 +1,8 @@
 # basename
 
 > Entfernt führende Verzeichniskomponenten in einem Pfad.
-> Weitere Informationen: <https://www.gnu.org/software/coreutils/basename>.
+> Siehe auch: `dirname`.
+> Weitere Informationen: <https://www.gnu.org/software/coreutils/manual/html_node/basename-invocation.html>.
 
 - Ermittle den Dateinamen in einem Pfad:
 

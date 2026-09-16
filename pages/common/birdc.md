@@ -2,7 +2,7 @@
 
 > BIRD remote control.
 > Retrieve information like routes from bird and perform configurations during runtime.
-> More information: <https://bird.network.cz/>.
+> More information: <https://bird.network.cz/?get_doc&v=30&f=bird-4.html>.
 
 - Open the remote control console:
 
@@ -26,7 +26,7 @@
 
 - Show all routes that contain a specific AS number:
 
-`birdc "show route where bgp_path ~ [{{4242120045}}]"`
+`birdc "show route where bgp_path ~ {{4242120045}}"`
 
 - Show all best routes:
 

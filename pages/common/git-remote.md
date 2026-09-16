@@ -5,7 +5,7 @@
 
 - List existing remotes with their names and URLs:
 
-`git remote {{-v|--verbose}}`
+`git remote {{[-v|--verbose]}}`
 
 - Show information about a remote:
 
@@ -18,6 +18,10 @@
 - Change the URL of a remote (use `--add` to keep the existing URL):
 
 `git remote set-url {{remote_name}} {{new_url}}`
+
+- Set push remote to be different from fetch remote:
+
+`git remote set-url {{remote_name}} {{new_url}} --push`
 
 - Show the URL of a remote:
 

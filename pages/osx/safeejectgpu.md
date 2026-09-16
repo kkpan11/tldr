@@ -1,7 +1,7 @@
 # SafeEjectGPU
 
 > Eject a GPU safely.
-> More information: <https://keith.github.io/xcode-man-pages/safeejectgpu.8.html>.
+> More information: <https://keith.github.io/xcode-man-pages/SafeEjectGPU.8.html>.
 
 - Eject all GPUs:
 
@@ -13,16 +13,16 @@
 
 - List apps using a GPU:
 
-`SafeEjectGPU gpuid {{GPU_ID}} apps`
+`SafeEjectGPU gpuid {{gpu_id}} apps`
 
 - Get the status of a GPU:
 
-`SafeEjectGPU gpuid {{GPU_ID}} status`
+`SafeEjectGPU gpuid {{gpu_id}} status`
 
 - Eject a GPU:
 
-`SafeEjectGPU gpuid {{GPU_ID}} Eject`
+`SafeEjectGPU gpuid {{gpu_id}} Eject`
 
 - Launch an app on a GPU:
 
-`SafeEjectGPU gpuid {{GPU_ID}} LaunchOnGPU {{path/to/App.app}}`
+`SafeEjectGPU gpuid {{gpu_id}} LaunchOnGPU {{path/to/App.app}}`

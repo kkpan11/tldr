@@ -1,11 +1,11 @@
 # settings
 
 > Get information about the Android OS.
-> More information: <https://adbinstaller.com/commands/adb-shell-settings-5b670d5ee7958178a2955536>.
+> More information: <https://web.archive.org/web/20240525010124/https://adbinstaller.com/commands/adb-shell-settings-5b670d5ee7958178a2955536>.
 
 - List the settings in the `global` namespace:
 
-`settings list {{global}}`
+`settings list global`
 
 - Get a value of a specific setting:
 

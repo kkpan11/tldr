@@ -1,15 +1,11 @@
 # plesk
 
 > Plesk hosting control panel.
-> More information: <https://docs.plesk.com>.
+> More information: <https://docs.plesk.com/en-US/obsidian/cli-linux/plesk-utility.75661/>.
 
 - Generate an auto login link for the admin user and print it:
 
 `plesk login`
-
-- Show product version information:
-
-`plesk version`
 
 - List all hosted domains:
 
@@ -26,3 +22,7 @@
 - Open the Plesk main configuration file in the default editor:
 
 `plesk conf {{panel.ini}}`
+
+- Display version:
+
+`plesk version`

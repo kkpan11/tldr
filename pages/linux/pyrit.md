@@ -1,7 +1,7 @@
 # pyrit
 
 > WPA/WPA2 cracking tool using computational power.
-> More information: <https://github.com/JPaulMora/Pyrit>.
+> More information: <https://manned.org/pyrit>.
 
 - Display system cracking speed:
 
@@ -13,7 +13,7 @@
 
 - Set [e]SSID:
 
-`pyrit -e "{{ESSID}}" create_essid`
+`pyrit -e "{{essid}}" create_essid`
 
 - [r]ead and analyze a specific packet capture file:
 

@@ -1,7 +1,7 @@
 # kismet
 
 > A wireless network and device detector, sniffer, wardriving tool, and WIDS (wireless intrusion detection) framework.
-> More information: <https://www.kismetwireless.net/>.
+> More information: <https://www.kismetwireless.net/docs/readme/starting/commandline/>.
 
 - Capture packets from a specific wireless interface:
 
@@ -17,7 +17,7 @@
 
 - Start Kismet with a specific configuration file:
 
-`sudo kismet -c {{wlan0}} -f {{path/to/config.conf}}`
+`sudo kismet -c {{wlan0}} {{[-f|--config-file]}} {{path/to/config.conf}}`
 
 - Monitor and log data to an SQLite database:
 
@@ -33,4 +33,4 @@
 
 - Display detailed information about a specific AP's packets:
 
-`sudo kismet -c {{wlan0}} --info {{BSSID}}`
+`sudo kismet -c {{wlan0}} --info {{bssid}}`

@@ -1,7 +1,7 @@
 # glocate
 
-> Perintah ini merupakan alias dari `-p linux locate`.
+> Perintah ini merupakan alias dari GNU `locate`.
 
 - Tampilkan dokumentasi untuk perintah asli:
 
-`tldr -p linux locate`
+`tldr {{[-p|--platform]}} linux locate`

@@ -2,36 +2,36 @@
 
 > Gerenciador de pacotes JavaScript e Node.js.
 > Gerencia projetos Node.js e suas dependências de módulos.
-> Mais informações: <https://www.npmjs.com>.
+> Mais informações: <https://docs.npmjs.com/cli/npm/>.
 
-- Interativamente cria um arquivo `package.json`:
+- Cria um arquio `package.json` com os valores padrões (omita `--yes` para torná-lo interativo):
 
-`npm init`
+`npm init {{[-y|--yes]}}`
 
 - Baixa todos os pacotes listados como dependências em `package.json`:
 
-`npm install`
+`npm {{[i|install]}}`
 
 - Baixa uma versão específica de um pacote e o adiciona à lista de dependências em `package.json`:
 
-`npm install {{pacote}}@{{versão}}`
+`npm {{[i|install]}} {{pacote}}@{{versão}}`
 
 - Baixa a última versão de um pacote e o adiciona à lista de dependências de desenvolvimento em `package.json`:
 
-`npm install {{pacote}} {{-D|--save-dev}}`
+`npm {{[i|install]}} {{pacote}} {{[-D|--save-dev]}}`
 
 - Baixa a última versão de um pacote e o instala globalmente:
 
-`npm install {{-g|--global}} {{pacote}}`
+`npm {{[i|install]}} {{pacote}} {{[-g|--global]}}`
 
 - Desinstala um pacote e o remove da lista de dependências em `package.json`:
 
-`npm uninstall {{pacote}}`
+`npm {{[r|uninstall]}} {{pacote}}`
 
-- Lista as dependências instaladas localmente:
+- Lista todas as dependências instaladas localmente:
 
-`npm list`
+`npm {{[ls|list]}}`
 
-- Lista os pacotes de nível superior instalados globalmente:
+- Lista todos os pacotes de nível superior instalados globalmente:
 
-`npm list {{-g|--global}} --depth {{0}}`
+`npm {{[ls|list]}} {{[-g|--global]}} --depth {{0}}`

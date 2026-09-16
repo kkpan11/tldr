@@ -8,13 +8,13 @@
 
 `ssh {{username}}@{{remote_host}}`
 
-- Connect to a remote server with a specific identity (private key):
+- Connect to a remote server with a specific [i]dentity (private key):
 
-`ssh -i {{path/to/key_file}} {{username}}@{{remote_host}}`
+`ssh {{username}}@{{remote_host}} -i {{path/to/key_file}}`
 
-- Connect to a remote server using a specific [p]ort:
+- Connect to a remote server with IP `10.0.0.1` and using a specific [p]ort (Note: `10.0.0.1` can be shortened to `10.1`):
 
-`ssh {{username}}@{{remote_host}} -p {{2222}}`
+`ssh {{username}}@10.0.0.1 -p {{2222}}`
 
 - Run a command on a remote server with a [t]ty allocation allowing interaction with the remote command:
 
@@ -22,16 +22,16 @@
 
 - SSH tunneling: [D]ynamic port forwarding (SOCKS proxy on `localhost:1080`):
 
-`ssh -D {{1080}} {{username}}@{{remote_host}}`
+`ssh {{username}}@{{remote_host}} -D {{1080}}`
 
 - SSH tunneling: Forward a specific port (`localhost:9999` to `example.org:80`) along with disabling pseudo-[T]ty allocation and executio[N] of remote commands:
 
-`ssh -L {{9999}}:{{example.org}}:{{80}} -N -T {{username}}@{{remote_host}}`
+`ssh {{username}}@{{remote_host}} -L {{9999}}:{{example.org}}:{{80}} -N -T`
 
 - SSH [J]umping: Connect through a jumphost to a remote server (Multiple jump hops may be specified separated by comma characters):
 
-`ssh -J {{username}}@{{jump_host}} {{username}}@{{remote_host}}`
+`ssh {{username}}@{{remote_host}} -J {{username}}@{{jump_host}}`
 
-- Agent forwarding: Forward the authentication information to the remote machine (see `man ssh_config` for available options):
+- Close a hanged session:
 
-`ssh -A {{username}}@{{remote_host}}`
+`<Enter><~><.>`

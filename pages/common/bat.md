@@ -2,7 +2,8 @@
 
 > Print and concatenate files.
 > A `cat` clone with syntax highlighting and Git integration.
-> More information: <https://github.com/sharkdp/bat>.
+> See also: `cat`.
+> More information: <https://manned.org/bat>.
 
 - Pretty print the contents of one or more files to `stdout`:
 
@@ -12,26 +13,26 @@
 
 `bat {{path/to/file1 path/to/file2 ...}} > {{path/to/target_file}}`
 
-- Remove decorations and disable paging (`--style plain` can be replaced with `-p`, or both options with `-pp`):
+- Remove decorations and disable paging:
 
-`bat --style plain --pager never {{path/to/file}}`
+`bat {{[-pp|--style plain --pager never]}} {{path/to/file}}`
 
 - Highlight a specific line or a range of lines with a different background color:
 
-`bat {{-H|--highlight-line}} {{10|5:10|:10|10:|10:+5}} {{path/to/file}}`
+`bat {{[-H|--highlight-line]}} {{10|5:10|:10|10:|10:+5}} {{path/to/file}}`
 
-- Show non-printable characters like space, tab or newline:
+- Show non-printable characters like space, tab, or newline:
 
-`bat {{-A|--show-all}} {{path/to/file}}`
+`bat {{[-A|--show-all]}} {{path/to/file}}`
 
 - Remove all decorations except line numbers in the output:
 
-`bat {{-n|--number}} {{path/to/file}}`
+`bat {{[-n|--number]}} {{path/to/file}}`
 
 - Syntax highlight a JSON file by explicitly setting the language:
 
-`bat {{-l|--language}} json {{path/to/file.json}}`
+`bat {{[-l|--language]}} json {{path/to/file.json}}`
 
 - Display all supported languages:
 
-`bat {{-L|--list-languages}}`
+`bat {{[-L|--list-languages]}}`

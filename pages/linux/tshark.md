@@ -1,9 +1,9 @@
 # tshark
 
 > Packet analysis tool, CLI version of Wireshark.
-> More information: <https://tshark.dev/>.
+> More information: <https://tshark.dev/#sitemap-in-tshark---help>.
 
-- Monitor everything on localhost:
+- Monitor packets from the default interface:
 
 `tshark`
 
@@ -21,7 +21,7 @@
 
 - Specify the format of captured output:
 
-`tshark -T {{json|text|ps|…}}`
+`tshark -T {{json|text|ps|...}}`
 
 - Select specific fields to output:
 

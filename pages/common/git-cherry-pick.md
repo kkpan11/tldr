@@ -8,7 +8,7 @@
 
 `git cherry-pick {{commit}}`
 
-- Apply a range of commits to the current branch (see also `git rebase --onto`):
+- Apply a range of commits to the current branch (see also: `git rebase --onto`):
 
 `git cherry-pick {{start_commit}}~..{{end_commit}}`
 
@@ -18,4 +18,8 @@
 
 - Add the changes of a commit to the working directory, without creating a commit:
 
-`git cherry-pick --no-commit {{commit}}`
+`git cherry-pick {{[-n|--no-commit]}} {{commit}}`
+
+- Append a line to the commit message to indicate that the commit was cherry-picked:
+
+`git cherry-pick -x {{commit}}`

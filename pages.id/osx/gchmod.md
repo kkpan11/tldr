@@ -1,7 +1,7 @@
 # gchmod
 
-> Perintah ini merupakan alias dari `-p linux chmod`.
+> Perintah ini merupakan alias dari GNU `chmod`.
 
 - Tampilkan dokumentasi untuk perintah asli:
 
-`tldr -p linux chmod`
+`tldr chmod`

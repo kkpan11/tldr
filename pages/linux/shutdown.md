@@ -1,21 +1,22 @@
 # shutdown
 
 > Shutdown and reboot the system.
+> See also: `poweroff`.
 > More information: <https://manned.org/shutdown.8>.
 
 - Power off ([h]alt) immediately:
 
 `shutdown -h now`
 
-- [r]eboot immediately:
+- Reboot immediately:
 
-`shutdown -r now`
+`shutdown {{[-r|--reboot]}} now`
 
-- [r]eboot in 5 minutes:
+- Reboot in 5 minutes:
 
-`shutdown -r +{{5}} &`
+`shutdown {{[-r|--reboot]}} +5 &`
 
-- Shutdown at 1:00 pm (Uses 24[h] clock):
+- Shutdown at 1:00 pm (Uses 24h clock):
 
 `shutdown -h 13:00`
 

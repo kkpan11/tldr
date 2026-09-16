@@ -1,7 +1,7 @@
 # kate
 
 > Editor de texto avançado do KDE.
-> Mais informações: <https://kate-editor.org/>.
+> Mais informações: <https://docs.kde.org/stable/en/kate/kate/fundamentals.html#starting-from-the-command-line>.
 
 - Abre arquivos específicos:
 
@@ -13,20 +13,20 @@
 
 - Cria uma uma nova instância do editor mesmo que uma já esteja aberta:
 
-`kate --new`
+`kate {{[-n|--new]}}`
 
 - Abre um arquivo com o cursor em uma linha específica:
 
-`kate --line {{número_linha}} {{caminho/para/arquivo}}`
+`kate {{[-l|--line]}} {{número_linha}} {{caminho/para/arquivo}}`
 
 - Abre um arquivo com o cursor em uma linha e coluna específica:
 
-`kate --line {{número_linha}} --column {{número_coluna}} {{caminho/para/arquivo}}`
+`kate {{[-l|--line]}} {{número_linha}} {{[-c|--column]}} {{número_coluna}} {{caminho/para/arquivo}}`
 
 - Cria um arquivo a partir do `stdin`:
 
-`cat {{caminho/para/arquivo}} | kate --stdin`
+`cat {{caminho/para/arquivo}} | kate {{[-i|--stdin]}}`
 
 - Exibe ajuda:
 
-`kate --help`
+`kate {{[-h|--help]}}`

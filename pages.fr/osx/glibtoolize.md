@@ -1,7 +1,7 @@
 # glibtoolize
 
-> Cette commande est un alias de `-p linux libtoolize`.
+> Cette commande est un alias de `libtoolize` de GNU.
 
-- Voir la documentation de la commande originale :
+- Affiche la documentation de la commande originale :
 
-`tldr -p linux libtoolize`
+`tldr {{[-p|--platform]}} linux libtoolize`

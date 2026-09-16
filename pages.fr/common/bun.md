@@ -2,7 +2,11 @@
 
 > Moteur d'exécution et boîte à outils JavaScript.
 > Comprend un empaqueteur, un exécuteur de tests et un gestionnaire de paquets.
-> Plus d'informations : <https://bun.sh>.
+> Plus d'informations : <https://bun.com/docs>.
+
+- Crée un nouveau projet Bun dans le répertoire actuel :
+
+`bun init`
 
 - Exécute un fichier JavaScript ou un script référencé dans `package.json` :
 
@@ -14,19 +18,15 @@
 
 - Télécharge et installe tous les paquets listés comme dépendances dans `package.json` :
 
-`bun install`
+`bun {{[i|install]}}`
 
 - Ajoute une dépendance à `package.json` :
 
-`bun add {{nom_module}}`
+`bun {{[a|add]}} {{nom_module}}`
 
 - Supprime une dépendance de `package.json` :
 
-`bun remove {{nom_module}}`
-
-- Crée un nouveau projet Bun dans le répertoire actuel :
-
-`bun init`
+`bun {{[rm|remove]}} {{nom_module}}`
 
 - Démarre un REPL (shell interactif) :
 

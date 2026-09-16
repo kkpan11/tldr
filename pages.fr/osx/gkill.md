@@ -1,7 +1,7 @@
 # gkill
 
-> Cette commande est un alias de `-p linux kill`.
+> Cette commande est un alias de `kill` de GNU.
 
-- Voir la documentation de la commande originale :
+- Affiche la documentation de la commande originale :
 
-`tldr -p linux kill`
+`tldr {{[-p|--platform]}} linux kill`

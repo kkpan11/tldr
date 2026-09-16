@@ -1,7 +1,8 @@
 # basename
 
 > Remueve nombres de directorios al inicio de una ruta.
-> Más información: <https://www.gnu.org/software/coreutils/basename>.
+> Vea también: `dirname`.
+> Más información: <https://www.gnu.org/software/coreutils/manual/html_node/basename-invocation.html>.
 
 - Imprime el nombre de un fichero a partir de su ruta:
 

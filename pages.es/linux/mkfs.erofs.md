@@ -1,7 +1,7 @@
 # mkfs.erofs
 
 > Crea un sistema de archivos EROFS en una imagen.
-> Más información: <https://erofs.docs.kernel.org/en/latest/>.
+> Más información: <https://manned.org/mkfs.erofs>.
 
 - Crea un sistema de archivos EROFS basado en el directorio raíz:
 
@@ -9,7 +9,7 @@
 
 - Crea una imagen EROFS con un UUID específico:
 
-`mkfs.erofs -U {{UUID}} image.erofs root/`
+`mkfs.erofs -U {{uuid}} image.erofs root/`
 
 - Crea una imagen EROFS comprimida:
 

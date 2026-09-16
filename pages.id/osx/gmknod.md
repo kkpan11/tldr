@@ -1,7 +1,7 @@
 # gmknod
 
-> Perintah ini merupakan alias dari `-p linux mknod`.
+> Perintah ini merupakan alias dari GNU `mknod`.
 
 - Tampilkan dokumentasi untuk perintah asli:
 
-`tldr -p linux mknod`
+`tldr {{[-p|--platform]}} linux mknod`

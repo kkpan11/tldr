@@ -1,7 +1,7 @@
 # gdnsdomainname
 
-> Perintah ini merupakan alias dari `-p linux dnsdomainname`.
+> Perintah ini merupakan alias dari GNU `dnsdomainname`.
 
 - Tampilkan dokumentasi untuk perintah asli:
 
-`tldr -p linux dnsdomainname`
+`tldr {{[-p|--platform]}} linux dnsdomainname`

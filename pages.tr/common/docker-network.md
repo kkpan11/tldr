@@ -9,7 +9,7 @@
 
 - Kullanıcı tarafından belirtilmiş bir ağ oluştur:
 
-`docker network create --driver {{driver_name}} {{ağ_ismi}}`
+`docker network create {{[-d|--driver]}} {{driver_name}} {{ağ_ismi}}`
 
 - Boşluk ile ayrılmış bir ağ listesinin detaylı bilgisini görüntüle:
 
@@ -17,11 +17,11 @@
 
 - Bir konteyneri isim veya ID kullanarak bir ağa bağla:
 
-`docker network connect {{ağ_ismi}} {{konteyner_ismi|ID}}`
+`docker network connect {{ağ_ismi}} {{konteyner_ismi|id}}`
 
 - Bir konteyneri bir ağdan çıkar:
 
-`docker network disconnect {{ağ_ismi}} {{konteyner_ismi|ID}}`
+`docker network disconnect {{ağ_ismi}} {{konteyner_ismi|id}}`
 
 - Tüm kullanılmayan (hiçbir konteyner tarafından belirtilmeyen) ağları sil:
 

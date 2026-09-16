@@ -15,11 +15,11 @@
 
 `cal {{maand}} {{jaar}}`
 
-- Toon de volledige kalender voor het huidige jaar door gebruik te maken van [j]ulian dagen  (beginnend vanaf één, genummerd vanaf 1 januari):
+- Toon de volledige kalender voor het huidige jaar door gebruik te maken van [j]ulian dagen (beginnend vanaf één, genummerd vanaf 1 januari):
 
 `cal -y -j`
 
-- Markeer ([h]) vandaag en toon [3] maanden rondom de datum::
+- Markeer ([h]) vandaag en toon [3] maanden rondom de datum:
 
 `cal -h -3 {{maand}} {{jaar}}`
 

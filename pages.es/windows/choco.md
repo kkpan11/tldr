@@ -1,21 +1,37 @@
 # choco
 
 > El gestor de paquetes Chocolatey.
-> Algunos subcomandos como `choco install` tienen su propia documentación de uso.
-> Más información: <https://chocolatey.org>.
+> Algunos subcomandos, como `install`, `upgrade` y `pin`, cuentan con su propia documentación de uso.
+> Más información: <https://docs.chocolatey.org/en-us/choco/commands/>.
 
-- Ejecuta un comando Chocolatey:
+- Instala un paquete:
 
-`choco {{comando}}`
+`choco install {{nombre_del_paquete}}`
 
-- Llama a la ayuda general:
+- Actualiza un paquete específico ya instalado:
 
-`choco -?`
+`choco upgrade {{nombre_del_paquete}}`
 
-- Llama a la ayuda sobre un comando específico:
+- Actualiza todos los paquetes obsoletos y confirma automáticamente todas las solicitudes:
 
-`choco {{comando}} -?`
+`choco upgrade all {{[-y|--yes]}}`
 
-- Revisa la versión de Chocolatey:
+- Desinstala un paquete y confirma automáticamente todas las solicitudes:
 
-`choco --version`
+`choco uninstall {{nombre_del_paquete}} {{[-y|--yes]}}`
+
+- Busca paquetes por nombre o palabra clave:
+
+`choco search {{consulta}}`
+
+- Muestra todos los paquetes instalados en el equipo:
+
+`choco list`
+
+- Muestra los paquetes para los que hay versiones más recientes disponibles:
+
+`choco outdated`
+
+- Instala un paquete desde una fuente específica:
+
+`choco install {{nombre_del_paquete}} {{[-s|--source]}} {{fuente}}`

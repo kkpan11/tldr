@@ -1,36 +1,37 @@
 # dmesg
 
 > Schrijf de kernelberichten naar `stdout`.
+> Zie ook: `journalctl`.
 > Meer informatie: <https://manned.org/dmesg>.
 
 - Toon kernelberichten:
 
-`dmesg`
+`sudo dmesg`
+
+- Toon kernelberichten in een leesbare formaat (gelijk aan `dmesg --color --reltime` doorgestuurd naar een pager):
+
+`sudo dmesg {{[-H|--human]}}`
 
 - Toon kernel foutmeldingen:
 
-`dmesg --level err`
+`sudo dmesg {{[-l|--level]}} err`
 
-- Toon kernelberichten en blijf nieuwe lezen, vergelijkbaar met `tail -f` (beschikbaar in kernels 3.5.0 en nieuwer):
+- Toon kernelberichten en blijf nieuwe lezen, vergelijkbaar met `tail -f`:
 
-`dmesg -w`
+`sudo dmesg {{[-w|--follow]}}`
 
-- Toon hoeveel fysiek geheugen beschikbaar is op dit systeem:
+- Toon kernelberichten die in het afgelopen uur zijn verzonden:
 
-`dmesg | grep -i memory`
+`sudo dmesg --since "1 hour ago"`
 
-- Toon kernelberichten 1 pagina per keer:
+- Toon kernelberichten met tijdstempels als verschillen ten opzichte van de lokale tijd:
 
-`dmesg | less`
+`sudo dmesg {{[-e|--reltime]}}`
 
-- Toon kernelberichten met een tijdstempel (beschikbaar in kernels 3.5.0 en nieuwer):
+- Toon kernelberichten met een tijdstempel voor elk bericht:
 
-`dmesg -T`
+`sudo dmesg {{[-T|--ctime]}}`
 
-- Toon kernelberichten in een leesbare vorm (beschikbaar in kernels 3.5.0 en nieuwer):
+- Kleur output:
 
-`dmesg -H`
-
-- Kleur output (beschikbaar in kernels 3.5.0 en nieuwer):
-
-`dmesg -L`
+`sudo dmesg {{[-L|--color]}}`

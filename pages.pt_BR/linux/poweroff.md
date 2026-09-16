@@ -1,7 +1,8 @@
 # poweroff
 
 > Desliga o sistema.
-> Mais informações: <https://www.manned.org/poweroff>.
+> Veja também: `shutdown`.
+> Mais informações: <https://manned.org/poweroff>.
 
 - Desliga o sistema:
 
@@ -17,8 +18,8 @@
 
 - Desliga imediatamente sem contato com o gerenciador do sistema:
 
-`poweroff --force --force`
+`poweroff {{[-f|--force]}}`
 
 - Grava a entrada de desligamento wtmp sem desligar o sistema:
 
-`poweroff --wtmp-only`
+`poweroff {{[-w|--wtmp-only]}}`

@@ -1,7 +1,7 @@
 # grcp
 
-> Perintah ini merupakan alias dari `-p linux rcp`.
+> Perintah ini merupakan alias dari GNU `rcp`.
 
 - Tampilkan dokumentasi untuk perintah asli:
 
-`tldr -p linux rcp`
+`tldr {{[-p|--platform]}} linux rcp`

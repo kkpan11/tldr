@@ -1,8 +1,7 @@
 # gcloud projects
 
 > Manage project access policies in Google Cloud.
-> See also: `gcloud`.
-> More information: <https://cloud.google.com/sdk/gcloud/reference/projects>.
+> More information: <https://docs.cloud.google.com/sdk/gcloud/reference/projects>.
 
 - Create a new project:
 

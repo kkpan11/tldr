@@ -1,7 +1,7 @@
 # ghead
 
-> Perintah ini merupakan alias dari `-p linux head`.
+> Perintah ini merupakan alias dari GNU `head`.
 
 - Tampilkan dokumentasi untuk perintah asli:
 
-`tldr -p linux head`
+`tldr {{[-p|--platform]}} linux head`

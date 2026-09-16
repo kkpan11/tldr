@@ -1,9 +1,9 @@
 # magick
 
-> Creër, bewerk, vorm of converteer bitmapafbeeldingen.
+> Creëer, bewerk, vorm of converteer bitmapafbeeldingen.
 > Deze tool vervangt `convert` in ImageMagick 7+. Bekijk `magick convert` om de oude tool te gebruiken in versies 7+.
 > Sommige subcommando's zoals `mogrify` hebben hun eigen documentatie.
-> Meer informatie: <https://imagemagick.org>.
+> Meer informatie: <https://imagemagick.org/script/magick.php>.
 
 - Converteer tussen afbeeldingsformaten:
 
@@ -13,11 +13,23 @@
 
 `magick {{pad/naar/invoer_afbeelding.png}} -resize {{100x100}} {{pad/naar/uitvoer_afbeelding.jpg}}`
 
+- Wijzig de grootte van een afbeelding met een percentage:
+
+`magick {{pad/naar/invoer_afbeelding.png}} -resize {{50}}% {{pad/naar/uitvoer_afbeelding.png}}`
+
+- Schaal een afbeelding naar een bepaalde bestandsgrootte:
+
+`magick {{pad/naar/invoer_afbeelding.png}} -define jpeg:extent={{512kb}} {{pad/naar/uitvoer_afbeelding.png}}`
+
+- Voeg afbeeldingen verticaal/horizontaal toe en maak de lege ruimte transparant:
+
+`magick convert -background none {{pad/naar/afbeelding1.png pad/naar/afbeelding2.png ...}} {{-append|+append}} {{pad/naar/uitvoer_afbeelding.png}}`
+
 - Maak een GIF van alle JPEG-afbeeldingen uit de huidige map:
 
 `magick {{*.jpg}} {{pad/naar/uitvoer_afbeelding.gif}}`
 
-- Creër een dambordpatroon:
+- Creëer een dambordpatroon:
 
 `magick -size {{640x480}} pattern:checkerboard {{pad/naar/dambordpatroon.png}}`
 

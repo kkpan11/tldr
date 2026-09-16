@@ -1,36 +1,28 @@
 # adb shell
 
-> Android Debug Bridge Shell: run remote shell commands on an Android emulator instance or connected Android devices.
+> Run shell commands on a connected Android device or emulator.
 > More information: <https://developer.android.com/tools/adb>.
 
 - Start a remote interactive shell on the emulator or device:
 
 `adb shell`
 
-- Get all the properties from emulator or device:
+- View documentation for showing Android system properties:
 
-`adb shell getprop`
+`tldr {{[-p|--platform]}} android getprop`
 
-- Revert all runtime permissions to their default:
+- View documentation for the Android package manager:
 
-`adb shell pm reset-permissions`
+`tldr {{[-p|--platform]}} android pm`
 
-- Revoke a dangerous permission for an application:
+- View documentations for sending event codes and touchscreen events:
 
-`adb shell pm revoke {{package}} {{permission}}`
+`tldr {{[-p|--platform]}} android input`
 
-- Trigger a key event:
+- View documentation for the Android activity manager:
 
-`adb shell input keyevent {{keycode}}`
+`tldr {{[-p|--platform]}} android am`
 
-- Clear the data of an application on an emulator or device:
+- List documented Android shell commands:
 
-`adb shell pm clear {{package}}`
-
-- Start an activity on emulator or device:
-
-`adb shell am start -n {{package}}/{{activity}}`
-
-- Start the home activity on an emulator or device:
-
-`adb shell am start -W -c android.intent.category.HOME -a android.intent.action.MAIN`
+`tldr {{[-p|--platform]}} android {{[-l|--list]}}`

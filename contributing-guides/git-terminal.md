@@ -33,14 +33,14 @@ The overall process should look somewhat like this:
 > [!WARNING]
 > Please avoid force-pushing since it makes the review process harder.
 
-7. Go to the GitHub page for your fork and click the green "Compare & pull request" button.
+8. Go to the GitHub page for your fork and click the green "Compare & pull request" button.
 
 Please only send related changes in the same pull request.
 Typically a pull request will include changes in a single file **unless the pull request introduces translations**.
 (Exceptions are [occasionally acceptable][mass-changes])
 
 [pr-howto]: ../CONTRIBUTING.md#submitting-a-pull-request
-[commit-msg]: ../CONTRIBUTING.md#commit-message
+[commit-msg]: ../CONTRIBUTING.md#commit-message-and-pr-title
 [mass-changes]: https://github.com/tldr-pages/tldr/pulls?&q=is:pr+is:merged+label:"mass+changes"
 
 ## Updating your fork
@@ -57,10 +57,10 @@ There are two ways to update your fork.
 
 ```bash
 git switch main
-git remote add upstream https://github.com/tldr-pages/tldr.git  # only run if you don't already have the upstream remote (check with "git remote -v")
+git remote add upstream https://github.com/tldr-pages/tldr.git # only run if you don't already have the upstream remote (check with "git remote -v")
 git fetch upstream main
-git rebase upstream/main     # in case you have any merge conflicts, click the link below to see how to resolve them
-git push --force-with-lease  # not needed if you only want to update your local repository
+git merge upstream/main # in case you have any merge conflicts, click the link below to see how to resolve them
+git push
 ```
 
 [How to resolve merge conflicts](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line)

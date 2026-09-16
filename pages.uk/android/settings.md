@@ -1,11 +1,11 @@
 # settings
 
 > Отримайте інформацію про операційну систему Android.
-> Більше інформації: <https://adbinstaller.com/commands/adb-shell-settings-5b670d5ee7958178a2955536>.
+> Більше інформації: <https://web.archive.org/web/20240525010124/https://adbinstaller.com/commands/adb-shell-settings-5b670d5ee7958178a2955536>.
 
 - Вивести список налаштувань в глобальному (`global`) просторі імен:
 
-`settings list {{global}}`
+`settings list global`
 
 - Отримайте значення конкретного налаштування:
 

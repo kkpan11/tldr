@@ -1,7 +1,7 @@
 # beanstalkd
 
 > 단순하고 일반적인 work-queue 서버.
-> 더 많은 정보: <https://beanstalkd.github.io/>.
+> 더 많은 정보: <https://manned.org/beanstalkd>.
 
 - beanstalkd를 시작하고, 11300 포트로 듣기:
 
@@ -17,4 +17,4 @@
 
 - 500밀리초마다 지속성있는 디렉토리에 동기화:
 
-`beanstalkd -b {{path/to/persistence_directory}} -f {{500}}`
+`beanstalkd -b {{path/to/persistence_directory}} -f 500`

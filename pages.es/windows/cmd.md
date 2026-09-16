@@ -9,7 +9,7 @@
 
 - Ejecuta [c]omandos específicos:
 
-`cmd /c {{echo Hola Mundo}}`
+`cmd /c {{echo cmd es ejecutado}}`
 
 - Ejecuta un script específico:
 
@@ -17,13 +17,13 @@
 
 - Ejecuta comandos específicos y luego entrar en un shell interactivo:
 
-`cmd /k {{echo Hola Mundo}}`
+`cmd /k {{echo cmd es ejecutado}}`
 
 - Inicia una sesión shell interactiva donde `echo` está desactivado en la salida de comandos:
 
 `cmd /q`
 
-- Inicia una sesión de shell interactiva con la expansión [v]ariable retardada activada o desactivada:
+- Inicia una sesión shell interactiva con la expansión [v]ariable retardada activada o desactivada:
 
 `cmd /v:{{on|off}}`
 

@@ -1,7 +1,7 @@
 # texdoc
 
 > Search for appropriate documentation for (La)TeX commands or packages.
-> More information: <https://texdoc.org/index.html>.
+> More information: <https://manned.org/texdoc>.
 
 - Open the first search result in the default PDF viewer:
 
@@ -9,8 +9,8 @@
 
 - List the best search results:
 
-`texdoc --list {{search}}`
+`texdoc {{[-l|--list]}} {{search}}`
 
 - Open full documentation of texdoc:
 
-`texdoc {{texdoc}}`
+`texdoc texdoc`

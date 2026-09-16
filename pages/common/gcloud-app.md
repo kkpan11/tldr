@@ -1,8 +1,7 @@
 # gcloud app
 
 > Build scalable applications on a managed serverless platform.
-> See also: `gcloud`.
-> More information: <https://cloud.google.com/sdk/gcloud/reference/app>.
+> More information: <https://docs.cloud.google.com/sdk/gcloud/reference/app>.
 
 - Deploy an app's code and configuration to the App Engine server:
 

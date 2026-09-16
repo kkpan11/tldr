@@ -1,6 +1,7 @@
 # shutdown
 
 > Spegni e riavvia il sistema.
+> Vedi anche: `poweroff`.
 > Maggiori informazioni: <https://manned.org/shutdown.8>.
 
 - Spegni il sistema immediatamente:
@@ -9,11 +10,11 @@
 
 - Riavvia il sistema immediatamente:
 
-`shutdown -r now`
+`shutdown {{[-r|--reboot]}} now`
 
 - Riavvia il sistema in 5 minuti:
 
-`shutdown -r +{{5}} &`
+`shutdown {{[-r|--reboot]}} +5 &`
 
 - Spegni il sistema alle 13:
 

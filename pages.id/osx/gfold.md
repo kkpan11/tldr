@@ -1,7 +1,7 @@
 # gfold
 
-> Perintah ini merupakan alias dari `-p linux fold`.
+> Perintah ini merupakan alias dari GNU `fold`.
 
 - Tampilkan dokumentasi untuk perintah asli:
 
-`tldr -p linux fold`
+`tldr {{[-p|--platform]}} linux fold`

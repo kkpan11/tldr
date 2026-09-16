@@ -1,7 +1,8 @@
 # ncdu
 
 > Diskbrugsanalysator med en ncurses-grænseflade.
-> Mere information: <https://manned.org/ncdu>.
+> Se også: `duf`, `df`.
+> Mere information: <https://dev.yorhel.nl/ncdu/man>.
 
 - Analysér den nuværende arbejdsmappe:
 

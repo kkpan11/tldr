@@ -1,7 +1,7 @@
 # read
 
 > Shell builtin voor het ophalen van data van `stdin`.
-> Meer informatie: <https://manned.org/read.1p>.
+> Meer informatie: <https://www.gnu.org/software/bash/manual/bash.html#index-read>.
 
 - Sla gegevens op die je van het toetsenbord typt:
 
@@ -17,9 +17,9 @@
 
 - Wijs meerdere waarden toe aan meerdere variabelen:
 
-`read {{_ variable1 _ variable2}} <<< {{"De achternaam is Bond"}}`
+`read <<< "{{De achternaam is Bond}}" {{_ variable1 _ variable2}}`
 
-- Laat backslash (\\) niet optreden als een escape-teken:
+- Laat backslash (`\`) niet optreden als een escape-teken:
 
 `read -r {{variable}}`
 
@@ -31,6 +31,6 @@
 
 `read -s {{variable}}`
 
-- Lees `stdin` en voer een actie uit op elke regel:
+- Voer een actie uit op elke regel van de uitvoer van een commando:
 
-`while read line; do {{echo|ls|rm|...}} "$line"; done < {{/dev/stdin|pad/naar/bestand|...}}`
+`{{commando}} | while IFS= read -r line; do {{echo|ls|rm|...}} "$line"; done`

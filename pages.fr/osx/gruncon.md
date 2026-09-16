@@ -1,7 +1,7 @@
 # gruncon
 
-> Cette commande est un alias de `-p linux runcon`.
+> Cette commande est un alias de `runcon` de GNU.
 
-- Voir la documentation de la commande originale :
+- Affiche la documentation de la commande originale :
 
-`tldr -p linux runcon`
+`tldr {{[-p|--platform]}} linux runcon`

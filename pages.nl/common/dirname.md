@@ -1,7 +1,8 @@
 # dirname
 
 > Berekent de bovenliggende map van een bestand of map.
-> Meer informatie: <https://www.gnu.org/software/coreutils/dirname>.
+> Zie ook: `basename`.
+> Meer informatie: <https://www.gnu.org/software/coreutils/manual/html_node/dirname-invocation.html>.
 
 - Bereken de bovenliggende map van een opgegeven pad:
 
@@ -13,4 +14,4 @@
 
 - Scheid de uitvoer met een NUL-teken in plaats van een nieuwe regel (handig bij gebruik met `xargs`):
 
-`dirname --zero {{pad/naar/bestand_of_map1 pad/naar/bestand_of_map2 ...}}`
+`dirname {{[-z|--zero]}} {{pad/naar/bestand_of_map1 pad/naar/bestand_of_map2 ...}}`

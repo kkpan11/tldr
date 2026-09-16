@@ -1,8 +1,7 @@
 # linode-cli tickets
 
 > Manage Linode Support Tickets.
-> See also: `linode-cli`.
-> More information: <https://www.linode.com/docs/products/tools/cli/guides/account/>.
+> More information: <https://techdocs.akamai.com/cloud-computing/docs/cli-commands-for-account-management>.
 
 - List your Support Tickets:
 

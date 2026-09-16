@@ -1,7 +1,7 @@
 # node
 
 > Platform JavaScript sisi server (Node.js).
-> Informasi lebih lanjut: <https://nodejs.org>.
+> Informasi lebih lanjut: <https://nodejs.org/docs/latest/api/cli.html#options>.
 
 - Jalankan berkas program JavaScript:
 
@@ -13,15 +13,15 @@
 
 - Jalankan berkas program dan jalankan ulang saat isi dari berkas tersebut terubah (membutuhkan Node.js versi 18.11+):
 
-`node --watch {{jalan/menuju/file}}`
+`node --watch {{jalan/menuju/berkas}}`
 
 - Evaluasi kode JavaScript dengan memberikanya sebagai sebuah argument:
 
-`node -e "{{kode}}"`
+`node {{[-e|--eval]}} "{{kode}}"`
 
 - Evaluasi kode dan cetak hasil, berguna untuk melihat versi dependesni node:
 
-`node -p "process.versions"`
+`node {{[-p|--print]}} "process.versions"`
 
 - Aktifkan inspector, yang akan menjeda eksekusi sampai debugger terhubung segera setelah kode sumber sepenuhnya terparser:
 

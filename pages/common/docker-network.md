@@ -9,7 +9,7 @@
 
 - Create a user-defined network:
 
-`docker network create --driver {{driver_name}} {{network_name}}`
+`docker network create {{[-d|--driver]}} {{driver_name}} {{network_name}}`
 
 - Display detailed information about one or more networks:
 
@@ -17,11 +17,11 @@
 
 - Connect a container to a network using a name or ID:
 
-`docker network connect {{network_name}} {{container_name|ID}}`
+`docker network connect {{network_name}} {{container_name|id}}`
 
 - Disconnect a container from a network:
 
-`docker network disconnect {{network_name}} {{container_name|ID}}`
+`docker network disconnect {{network_name}} {{container_name|id}}`
 
 - Remove all unused (not referenced by any container) networks:
 

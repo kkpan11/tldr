@@ -1,7 +1,7 @@
 # gdir
 
-> Cette commande est un alias de `-p linux dir`.
+> Cette commande est un alias de `dir` de GNU.
 
-- Voir la documentation de la commande originale :
+- Affiche la documentation de la commande originale :
 
-`tldr -p linux dir`
+`tldr {{[-p|--platform]}} linux dir`

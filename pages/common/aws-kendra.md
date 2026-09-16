@@ -1,7 +1,7 @@
 # aws kendra
 
 > CLI for AWS Kendra.
-> More information: <https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kendra/index.html>.
+> More information: <https://docs.aws.amazon.com/cli/latest/reference/kendra/>.
 
 - Create an index:
 
@@ -23,6 +23,6 @@
 
 `aws kendra describe-data-source --id {{data_source_id}}`
 
-- List search queries:
+- Get query suggestions:
 
-`aws kendra list-query-suggestions --index-id {{index_id}} --query-text {{query_text}}`
+`aws kendra get-query-suggestions --index-id {{index_id}} --query-text {{query_text}}`

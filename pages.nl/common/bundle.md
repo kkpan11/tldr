@@ -17,17 +17,17 @@
 
 - Update een of meerdere specifieke gem(s) gedefineerd in de `Gemfile`:
 
-`bundle update {{gem_naam1}} {{gem_naam2}}`
+`bundle update {{gem_naam1 gem_naam2 ...}}`
 
 - Update een of meerdere specifieke gem(s) gedefineerd in de `Gemfile` maar alleen naar de volgende patch versie:
 
-`bundle update --patch {{gem_naam1}} {{gem_naam2}}`
+`bundle update --patch {{gem_naam1 gem_naam2 ...}}`
 
 - Update alle gems binnen de gegeven groep in de `Gemfile`:
 
 `bundle update --group {{development}}`
 
-- Toon de geïnstalleerde gems in de `Gemfile` welke  nieuwere versies beschikbaar hebben:
+- Toon de geïnstalleerde gems in de `Gemfile` welke nieuwere versies beschikbaar hebben:
 
 `bundle outdated`
 

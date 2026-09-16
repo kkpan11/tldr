@@ -1,13 +1,14 @@
 # poweroff
 
 > Apaga el sistema.
-> Más información: <https://www.manned.org/poweroff>.
+> Vea también: `shutdown`.
+> Más información: <https://manned.org/poweroff>.
 
 - Apaga el sistema:
 
 `poweroff`
 
-- Detén el sistema (igual que `halt`):
+- Detiene el sistema (igual que `halt`):
 
 `poweroff --halt`
 
@@ -17,8 +18,8 @@
 
 - Apaga inmediatamente el sistema sin contactar al administrador:
 
-`poweroff --force`
+`poweroff {{[-f|--force]}}`
 
 - Escribe una entrada en el archivo wtmp sin apagar el sistema:
 
-`poweroff --wtmp-only`
+`poweroff {{[-w|--wtmp-only]}}`

@@ -1,15 +1,15 @@
 # avrdude
 
 > Pilotes pour programmer les microcontrôleurs Atmel AVR.
-> Plus d'informations : <https://www.nongnu.org/avrdude/>.
+> Plus d'informations : <https://www.nongnu.org/avrdude/user-manual/avrdude_3.html#Option-Descriptions>.
 
 - Lire le contenu du microcontrôleur AVR :
 
-`avrdude -p {{appareil_AVR}} -c {{programmeur}} -U flash:r:{{fichier.hex}}:i`
+`avrdude -p {{part_id}} -c {{programmeur}} -U flash:r:{{fichier.hex}}:i`
 
 - Programme le microcontrôleur AVR :
 
-`avrdude -p {{appareil_AVR}} -c {{programmeur}} -U flash:w:{{fichier.hex}}`
+`avrdude -p {{part_id}} -c {{programmeur}} -U flash:w:{{fichier.hex}}`
 
 - Affiche les appareils AVR disponibles :
 

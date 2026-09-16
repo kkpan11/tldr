@@ -9,12 +9,16 @@
 
 - Construye y publica un sitio en un número de puerto especificado:
 
-`hugo server --port {{número_de_puerto}}`
+`hugo server {{[-p|--port]}} {{número_de_puerto}}`
 
-- Construye y publica un sitio mientras se minifican los formatos de salida soportados (HTML, XML, etc.):
+- Construye y publica un sitio mientras se minimizan los formatos de salida soportados (HTML, XML, etc.):
 
 `hugo server --minify`
 
+- Construye y sirve un sitio en el entorno de producción con reconstrucción completa (re-render) disminuyendo el tamaño (minify) en los formatos soportados:
+
+`hugo server {{[-e|--environment]}} {{producción}} --disableFastRender --minify`
+
 - Muestra la ayuda:
 
-`hugo server --help`
+`hugo server {{[-h|--help]}}`

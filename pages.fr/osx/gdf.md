@@ -1,7 +1,7 @@
 # gdf
 
-> Cette commande est un alias de `-p linux df`.
+> Cette commande est un alias de `df` de GNU.
 
-- Voir la documentation de la commande originale :
+- Affiche la documentation de la commande originale :
 
-`tldr -p linux df`
+`tldr {{[-p|--platform]}} linux df`

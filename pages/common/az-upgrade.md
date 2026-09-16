@@ -2,7 +2,7 @@
 
 > Upgrade Azure CLI and Extensions.
 > Part of `azure-cli` (also known as `az`).
-> More information: <https://learn.microsoft.com/cli/azure/reference-index?view=azure-cli-latest#az-upgrade>.
+> More information: <https://learn.microsoft.com/cli/azure/reference-index#az-upgrade>.
 
 - Upgrade Azure CLI:
 
@@ -14,4 +14,4 @@
 
 - Upgrade Azure CLI and Extensions without prompting for confirmation:
 
-`az version --all --yes`
+`az upgrade --all {{[-y|--yes]}}`

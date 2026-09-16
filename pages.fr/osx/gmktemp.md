@@ -1,7 +1,7 @@
 # gmktemp
 
-> Cette commande est un alias de `-p linux mktemp`.
+> Cette commande est un alias de `mktemp` de GNU.
 
-- Voir la documentation de la commande originale :
+- Affiche la documentation de la commande originale :
 
-`tldr -p linux mktemp`
+`tldr {{[-p|--platform]}} linux mktemp`

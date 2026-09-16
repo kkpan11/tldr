@@ -1,7 +1,7 @@
 # gptx
 
-> Perintah ini merupakan alias dari `-p linux ptx`.
+> Perintah ini merupakan alias dari GNU `ptx`.
 
 - Tampilkan dokumentasi untuk perintah asli:
 
-`tldr -p linux ptx`
+`tldr {{[-p|--platform]}} linux ptx`

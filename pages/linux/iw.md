@@ -1,20 +1,37 @@
 # iw
 
 > Show and manipulate wireless devices.
-> More information: <https://manned.org/iw>.
+> See also: `iw dev`, `nmcli`, `iwctl`.
+> More information: <https://wireless.docs.kernel.org/en/latest/en/users/documentation/iw.html>.
 
 - Scan for available wireless networks:
 
-`iw dev {{wlp}} scan`
+`iw dev {{wlanX}} scan`
 
 - Join an open wireless network:
 
-`iw dev {{wlp}} connect {{SSID}}`
+`iw dev {{wlanX}} connect {{ssid}}`
 
 - Close the current connection:
 
-`iw dev {{wlp}} disconnect`
+`iw dev {{wlanX}} disconnect`
 
 - Show information about the current connection:
 
-`iw dev {{wlp}} link`
+`iw dev {{wlanX}} link`
+
+- List all physical and logical wireless network interfaces:
+
+`iw dev`
+
+- List all wireless capabilities for all physical hardware interfaces:
+
+`iw phy`
+
+- List the kernel's current wireless regulatory domain information:
+
+`iw reg get`
+
+- Display help:
+
+`iw help`

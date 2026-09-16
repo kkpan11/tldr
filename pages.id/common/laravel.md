@@ -1,7 +1,7 @@
 # laravel
 
 > Pasang framework Laravel framework dari command-line.
-> Informasi lebih lanjut: <https://laravel.com>.
+> Informasi lebih lanjut: <https://laravel.com/docs/installation>.
 
 - Buat aplikasi Laravel baru:
 
@@ -11,7 +11,7 @@
 
 `laravel new {{nama}} --dev`
 
-- Overwrite if the directory already exists:
+- Paksa tulis (overwrite) direktori proyek dengan berkas-berkas Laravel baru:
 
 `laravel new {{nama}} --force`
 

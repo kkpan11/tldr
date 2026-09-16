@@ -1,7 +1,7 @@
 # glibtool
 
-> Perintah ini merupakan alias dari `-p linux libtool`.
+> Perintah ini merupakan alias dari GNU `libtool`.
 
 - Tampilkan dokumentasi untuk perintah asli:
 
-`tldr -p linux libtool`
+`tldr {{[-p|--platform]}} linux libtool`

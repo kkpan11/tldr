@@ -11,10 +11,10 @@
 
 `pw-link {{çıktı_port_ismi}} {{girdi_port_ismi}}`
 
-- Disconnect two ports:
+- İki portun bağlantısını kesin:
 
-`pw-link --disconnect {{çıktı_port_ismi}} {{girdi_port_ismi}}`
+`pw-link {{[-d|--disconnect]}} {{çıktı_port_ismi}} {{girdi_port_ismi}}`
 
 - Yardım sayfası göster:
 
-`pw-link -h`
+`pw-link {{[-h|--help]}}`

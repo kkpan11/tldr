@@ -1,7 +1,7 @@
 # gdd
 
-> Perintah ini merupakan alias dari `-p linux dd`.
+> Perintah ini merupakan alias dari GNU `dd`.
 
 - Tampilkan dokumentasi untuk perintah asli:
 
-`tldr -p linux dd`
+`tldr {{[-p|--platform]}} linux dd`

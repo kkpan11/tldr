@@ -1,7 +1,7 @@
 # pkg-config
 
 > Provide the details of installed libraries for compiling applications.
-> More information: <https://www.freedesktop.org/wiki/Software/pkg-config/>.
+> More information: <https://manned.org/pkg-config>.
 
 - Get the list of libraries and their dependencies:
 
@@ -10,6 +10,10 @@
 - Get the list of libraries, their dependencies, and proper cflags for gcc:
 
 `pkg-config --cflags --libs {{library1 library2 ...}}`
+
+- Print the version of the linked modules:
+
+`pkg-config --modversion {{module1 module2 ...}}`
 
 - Compile your code with libgtk-3, libwebkit2gtk-4.0 and all their dependencies:
 

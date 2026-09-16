@@ -1,7 +1,7 @@
 # gtalk
 
-> Perintah ini merupakan alias dari `-p linux talk`.
+> Perintah ini merupakan alias dari GNU `talk`.
 
 - Tampilkan dokumentasi untuk perintah asli:
 
-`tldr -p linux talk`
+`tldr {{[-p|--platform]}} linux talk`

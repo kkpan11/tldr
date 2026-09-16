@@ -1,7 +1,8 @@
 # paru
 
 > An AUR helper and pacman wrapper.
-> More information: <https://github.com/Morganamilo/paru>.
+> See also: `pacman`, `yay`.
+> More information: <https://github.com/Morganamilo/paru#examples>.
 
 - Interactively search for and install a package:
 
@@ -15,6 +16,14 @@
 
 `paru -Sua`
 
+- List manually installed packages:
+
+`paru -Qqm`
+
+- Remove an installed package, it's configuration files, and dependencies:
+
+`paru -Rns {{package}}`
+
 - Get information about a package:
 
 `paru -Si {{package}}`
@@ -25,4 +34,4 @@
 
 - Display the `PKGBUILD` file of a package:
 
-`paru --getpkgbuild --print {{package}}`
+`paru -Gp {{package}}`

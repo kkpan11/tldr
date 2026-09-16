@@ -1,4 +1,4 @@
-# git-imerge
+# git imerge
 
 > İki git dalı arasında aşamalı olarak birleştirme veya taban değiştirme işlemlerini uygula.
 > Dallar arasındaki uyuşmazlıklar özel commitler ile bölüşülerek uyuşmazlıkları çözmek kolaylaştırılır.
@@ -26,4 +26,4 @@
 
 - imerge işlemini sonlandır ve belirtilen eski bir dala geri dön:
 
-`git-imerge remove && git checkout {{eski_dal}}`
+`git imerge remove && git checkout {{eski_dal}}`

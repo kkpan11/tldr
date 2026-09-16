@@ -1,8 +1,7 @@
 # gcloud sql backups describe
 
 > Retrieve information about a backup.
-> See also: `gcloud`.
-> More information: <https://cloud.google.com/sdk/gcloud/reference/sql/backups/describe>.
+> More information: <https://docs.cloud.google.com/sdk/gcloud/reference/sql/backups/describe>.
 
 - Retrieve information about a backup:
 

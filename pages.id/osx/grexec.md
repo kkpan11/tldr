@@ -1,7 +1,7 @@
 # grexec
 
-> Perintah ini merupakan alias dari `-p linux rexec`.
+> Perintah ini merupakan alias dari GNU `rexec`.
 
 - Tampilkan dokumentasi untuk perintah asli:
 
-`tldr -p linux rexec`
+`tldr {{[-p|--platform]}} linux rexec`

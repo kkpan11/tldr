@@ -1,7 +1,7 @@
 # gdir
 
-> Perintah ini merupakan alias dari `-p linux dir`.
+> Perintah ini merupakan alias dari GNU `dir`.
 
 - Tampilkan dokumentasi untuk perintah asli:
 
-`tldr -p linux dir`
+`tldr {{[-p|--platform]}} linux dir`

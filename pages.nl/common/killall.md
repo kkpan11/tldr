@@ -8,18 +8,18 @@
 
 `killall {{proces_naam}}`
 
-- [l]ijst beschikbare signaalnamen (te gebruiken zonder het 'SIG'-voorvoegsel):
+- Toon beschikbare signaalnamen (te gebruiken zonder het 'SIG'-voorvoegsel):
 
-`killall -l`
+`killall {{[-l|--list]}}`
 
 - Vraag interactief om bevestiging voordat het proces wordt beëindigd:
 
-`killall -i {{proces_naam}}`
+`killall {{[-i|--interactive]}} {{proces_naam}}`
 
-- Beëindig een proces met het SIGINT (interrupt) signaal, hetzelfde signaal dat wordt verzonden door `Ctrl + C` in te drukken:
+- Beëindig een proces met het SIGINT (interrupt) signaal, hetzelfde signaal dat wordt verzonden door `<Ctrl c>` in te drukken:
 
-`killall -INT {{proces_naam}}`
+`killall {{[-2|-SIGINT]}} {{proces_naam}}`
 
 - Forceer het beëindigen van een proces:
 
-`killall -KILL {{proces_naam}}`
+`killall {{[-9|-SIGKILL]}} {{proces_naam}}`

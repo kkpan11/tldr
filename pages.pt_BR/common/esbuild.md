@@ -1,7 +1,7 @@
 # esbuild
 
 > Empacotador e minificador JavaScript construído para velocidade.
-> Mais informações: <https://esbuild.github.io/>.
+> Mais informações: <https://esbuild.github.io/api/#general-options>.
 
 - Empacota uma aplicação JavaScript e imprime para `stdout`:
 
@@ -9,7 +9,7 @@
 
 - Empacota uma aplicação JSX de `stdin`:
 
-`esbuild --bundle --outfile={{caminho/para/saída.js}} < {{caminho/para/arquivo.jsx}}`
+`esbuild < {{caminho/para/arquivo.jsx}} --bundle --outfile={{caminho/para/saída.js}}`
 
 - Empacota e reduz uma aplicação JSX com mapas de origem no modo `production`:
 

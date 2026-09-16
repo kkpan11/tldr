@@ -3,11 +3,11 @@
 > Show information about the usage of XSI IPC facilities: shared memory segments, message queues, and semaphore arrays.
 > More information: <https://manned.org/ipcs.1p>.
 
-- Show information about all the IPC:
+- Show information about [a]ll the IPC:
 
 `ipcs -a`
 
-- Show information about active shared [m]emory segments, message [q]ueues or [s]empahore sets:
+- Show information about active shared [m]emory segments, message [q]ueues or [s]emaphore sets:
 
 `ipcs {{-m|-q|-s}}`
 
@@ -15,7 +15,7 @@
 
 `ipcs -b`
 
-- Show [c]reator’s user name and group name for all IPC facilities:
+- Show [c]reator's user name and group name for all IPC facilities:
 
 `ipcs -c`
 

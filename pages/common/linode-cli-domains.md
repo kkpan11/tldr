@@ -1,8 +1,7 @@
 # linode-cli domains
 
 > Manage Linode Domains and DNS configuration.
-> See also: `linode-cli`.
-> More information: <https://www.linode.com/docs/products/tools/cli/guides/domains/>.
+> More information: <https://techdocs.akamai.com/cloud-computing/docs/cli-commands-for-the-dns-manager>.
 
 - List all managed domains:
 

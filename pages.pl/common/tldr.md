@@ -14,16 +14,24 @@
 
 - Wyświetl stronę tldr dla komendy w podanym języku (jeżeli jest dostępna, w przeciwnym razie po angielsku):
 
-`tldr --language {{kod_języka}} {{komenda}}`
+`tldr {{[-L|--language]}} {{kod_języka}} {{komenda}}`
 
 - Wyświetl stronę tldr dla komendy z podanej platformy:
 
-`tldr --platform {{android|common|freebsd|linux|osx|netbsd|openbsd|sunos|windows}} {{komenda}}`
+`tldr {{[-p|--platform]}} {{android|cisco-ios|common|dos|freebsd|linux|netbsd|openbsd|osx|sunos|windows}} {{komenda}}`
 
 - Zaktualizuj lokalną pamięć podręczną stron tldr:
 
-`tldr --update`
+`tldr {{[-u|--update]}}`
 
 - Wyświetl listę stron tldr dla aktualnej platformy i `common`:
 
-`tldr --list`
+`tldr {{[-l|--list]}}`
+
+- Przeglądaj strony tldr w oknie terminala (`fzf` musi być zainstalowany):
+
+`tldr {{[-l|--list]}} | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr`
+
+- Wyświetl stronę tldr dla losowej komendy:
+
+`tldr {{[-l|--list]}} | shuf {{[-n|--head-count]}} 1 | xargs tldr`

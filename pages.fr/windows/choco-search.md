@@ -1,28 +1,28 @@
 # choco search
 
-> Recherchez un forfait local ou distant avec Chocolatey.
-> Plus d'informations : <https://chocolatey.org/docs/commands-search>.
+> Recherche un forfait local ou distant avec Chocolatey.
+> Plus d'informations : <https://docs.chocolatey.org/en-us/choco/commands/search/>.
 
-- Rechercher un forfait :
+- Recherche un forfait :
 
 `choco search {{requête}}`
 
-- Rechercher un package localement :
+- Recherche un package localement :
 
 `choco search {{requête}} --local-only`
 
-- Inclure uniquement les correspondances exactes dans les résultats :
+- Inclut uniquement les correspondances exactes dans les résultats :
 
-`choco search {{requête}} --exact`
+`choco search {{requête}} {{[-e|--exact]}}`
 
-- Confirmer automatiquement toutes les invites :
+- Confirme automatiquement toutes les invites :
 
-`choco search {{requête}} --yes`
+`choco search {{requête}} {{[-y|--yes]}}`
 
-- Spécifiez une source personnalisée dans laquelle rechercher des packages :
+- Spécifie une source personnalisée dans laquelle rechercher des packages :
 
-`choco search {{requête}} --source {{source_url|alias}}`
+`choco search {{requête}} {{[-s|--source]}} {{source_url|alias}}`
 
-- Fournir un nom d'utilisateur et un mot de passe pour l'authentification :
+- Fournit un nom d'utilisateur et un mot de passe pour l'authentification :
 
-`choco search {{requête}} --user {{nom d'utilisateur}} --password {{mot de passe}}`
+`choco search {{requête}} {{[-u|--user]}} {{nom d'utilisateur}} {{[-p|--password]}} {{mot de passe}}`

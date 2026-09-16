@@ -1,7 +1,7 @@
 # glogger
 
-> Perintah ini merupakan alias dari `-p linux logger`.
+> Perintah ini merupakan alias dari GNU `logger`.
 
 - Tampilkan dokumentasi untuk perintah asli:
 
-`tldr -p linux logger`
+`tldr {{[-p|--platform]}} linux logger`

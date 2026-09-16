@@ -1,7 +1,7 @@
 # pacman --sync
 
 > Synchronise les paquets.
-> Voir aussi: `pacman`.
+> Voir aussi : `pacman`.
 > Plus d'informations : <https://manned.org/pacman.8>.
 
 - Installe un nouveau paquet :
@@ -16,7 +16,7 @@
 
 `sudo pacman --sync --refresh --sysupgrade --noconfirm {{paquet}}`
 
-- Recherche un paquet en utilisant un nom ou une expression régulière :
+- Recherche un paquet en utilisant un nom ou une `regex` :
 
 `pacman --sync --search "{{motif}}"`
 

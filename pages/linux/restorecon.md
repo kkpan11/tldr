@@ -1,12 +1,12 @@
 # restorecon
 
 > Restore SELinux security context on files/directories according to persistent rules.
-> See also: `semanage-fcontext`.
+> See also: `semanage fcontext`.
 > More information: <https://manned.org/restorecon>.
 
 - View the current security context of a file or directory:
 
-`ls -dlZ {{path/to/file_or_directory}}`
+`ls {{[-dlZ|--directory -l --context]}} {{path/to/file_or_directory}}`
 
 - Restore the security context of a file or directory:
 

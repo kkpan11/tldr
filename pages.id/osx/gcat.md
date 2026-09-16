@@ -1,7 +1,7 @@
 # gcat
 
-> Perintah ini merupakan alias dari `-p linux cat`.
+> Perintah ini merupakan alias dari GNU `cat`.
 
 - Tampilkan dokumentasi untuk perintah asli:
 
-`tldr -p linux cat`
+`tldr {{[-p|--platform]}} linux cat`

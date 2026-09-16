@@ -10,8 +10,8 @@
 
 - Abre o alpine na tela de composição de mensagem com o e-mail do destinatário preenchido:
 
-`alpine {{email@exemplo.net}}`
+`alpine {{email@example.net}}`
 
 - Encerra o alpine:
 
-`q + y`
+`<q><y>`

@@ -1,7 +1,7 @@
 # mklink
 
 > シンボリックリンクを作成します。
-> 詳しくはこちら: <https://learn.microsoft.com/windows-server/administration/windows-commands/mklink>
+> 詳細情報: <https://learn.microsoft.com/windows-server/administration/windows-commands/mklink>。
 
 - ファイルへのシンボリックリンクを作成します:
 

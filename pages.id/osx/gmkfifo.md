@@ -1,7 +1,7 @@
 # gmkfifo
 
-> Perintah ini merupakan alias dari `-p linux mkfifo`.
+> Perintah ini merupakan alias dari GNU `mkfifo`.
 
 - Tampilkan dokumentasi untuk perintah asli:
 
-`tldr -p linux mkfifo`
+`tldr mkfifo`

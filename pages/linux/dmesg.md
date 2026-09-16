@@ -1,36 +1,37 @@
 # dmesg
 
 > Write the kernel messages to `stdout`.
+> See also: `journalctl`.
 > More information: <https://manned.org/dmesg>.
 
 - Show kernel messages:
 
-`dmesg`
+`sudo dmesg`
+
+- Show kernel messages in human-readable format (equivalent of `dmesg --color --reltime` piped to a pager):
+
+`sudo dmesg {{[-H|--human]}}`
 
 - Show kernel error messages:
 
-`dmesg --level err`
+`sudo dmesg {{[-l|--level]}} err`
 
-- Show kernel messages and keep reading new ones, similar to `tail -f` (available in kernels 3.5.0 and newer):
+- Show kernel messages and keep [w]aiting for new ones (similar to `tail --follow`):
 
-`dmesg -w`
+`sudo dmesg {{[-w|--follow]}}`
 
-- Show how much physical memory is available on this system:
+- Show kernel messages emitted in the last hour:
 
-`dmesg | grep -i memory`
+`sudo dmesg --since "1 hour ago"`
 
-- Show kernel messages 1 page at a time:
+- Show kernel messages with timestamps as differences from local time:
 
-`dmesg | less`
+`sudo dmesg {{[-e|--reltime]}}`
 
-- Show kernel messages with a timestamp (available in kernels 3.5.0 and newer):
+- Show kernel messages with a timestamp for each message:
 
-`dmesg -T`
+`sudo dmesg {{[-T|--ctime]}}`
 
-- Show kernel messages in human-readable form (available in kernels 3.5.0 and newer):
+- Colorize output:
 
-`dmesg -H`
-
-- Colorize output (available in kernels 3.5.0 and newer):
-
-`dmesg -L`
+`sudo dmesg {{[-L|--color]}}`

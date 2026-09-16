@@ -1,7 +1,7 @@
 # gtftp
 
-> Cette commande est un alias de `-p linux tftp`.
+> Cette commande est un alias de `tftp` de GNU.
 
-- Voir la documentation de la commande originale :
+- Affiche la documentation de la commande originale :
 
-`tldr -p linux tftp`
+`tldr {{[-p|--platform]}} linux tftp`

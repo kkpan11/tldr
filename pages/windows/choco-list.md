@@ -1,28 +1,28 @@
 # choco list
 
-> Display a list of packages with Chocolatey.
-> More information: <https://chocolatey.org/docs/commands-list>.
+> Display a list of locally installed packages with Chocolatey.
+> More information: <https://docs.chocolatey.org/en-us/choco/commands/list/>.
 
-- Display all available packages:
+- List locally installed packages:
 
 `choco list`
 
-- Display all locally installed packages:
+- List installed packages including system programs:
 
-`choco list --local-only`
+`choco list {{[-i|--include-programs]}}`
 
-- Display a list including local programs:
+- List only the IDs of installed packages:
 
-`choco list --include-programs`
+`choco list --id-only`
 
-- Display only approved packages:
+- List installed packages matching a name exactly:
 
-`choco list --approved-only`
+`choco list {{package}} {{[-e|--exact]}}`
 
-- Specify a custom source to display packages from:
+- List installed packages starting with a specific prefix:
 
-`choco list --source {{source_url|alias}}`
+`choco list --id-starts-with {{prefix}}`
 
-- Provide a username and password for authentication:
+- List installed packages from a specific alternative source:
 
-`choco list --user {{username}} --password {{password}}`
+`choco list {{[-s|--source]}} {{windowsfeatures|ruby|cygwin|...}}`

@@ -5,11 +5,11 @@
 
 - Muestra todas las confirmaciones de la rama actual:
 
-`git rev-list {{HEAD}}`
+`git rev-list HEAD`
 
 - Imprime la última confirmación que cambió (agregó/editó/eliminó) un archivo específico en la rama actual:
 
-`git rev-list {{-n|--max-count}} 1 HEAD -- {{ruta/al/archivo}}`
+`git rev-list {{[-n|--max-count]}} 1 HEAD -- {{ruta/al/archivo}}`
 
 - Muestra las confirmaciones más recientes a partir de una fecha y una rama específica:
 

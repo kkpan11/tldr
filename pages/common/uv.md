@@ -1,32 +1,28 @@
 # uv
 
 > A fast Python package and project manager.
-> Some subcommands such as `uv tool` and `uv python` have their own usage documentation.
-> More information: <https://docs.astral.sh/uv/reference/cli>.
+> Some subcommands such as `tool` and `python` have their own usage documentation.
+> More information: <https://docs.astral.sh/uv/reference/cli/>.
 
 - Create a new Python project in the current directory:
 
 `uv init`
 
-- Create a new Python project in a directory with the given name:
+- Create a new Python project at the specified path:
 
-`uv init {{project_name}}`
+`uv init {{path/to/directory}}`
 
-- Add a new package to the project:
+- Add a new dependency to the project:
 
 `uv add {{package}}`
 
-- Remove a package from the project:
+- Remove a dependency from the project:
 
 `uv remove {{package}}`
 
-- Run a script in the project's environment:
+- Run a script or a command in the project's environment:
 
-`uv run {{path/to/script.py}}`
-
-- Run a command in the project's environment:
-
-`uv run {{command}}`
+`uv run {{path/to/script.py|command}}`
 
 - Update a project's environment from `pyproject.toml`:
 
@@ -35,3 +31,7 @@
 - Create a lock file for the project's dependencies:
 
 `uv lock`
+
+- Build the project into source and binary distributions:
+
+`uv build`

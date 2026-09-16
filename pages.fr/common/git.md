@@ -1,29 +1,37 @@
 # git
 
 > Système de gestion de versions décentralisé.
-> Certaines commandes comme `git commit` ont leur propre documentation.
-> Plus d'informations : <https://git-scm.com/>.
+> Certaines commandes comme `commit`, `add`, `branch`, `switch`, `push`, etc. ont leur propre documentation.
+> Plus d'informations : <https://git-scm.com/docs/git>.
 
-- Obtenir la version de Git :
+- Crée un dépôt Git vide :
 
-`git --version`
+`git init`
 
-- Afficher l'aide générale :
+- Clone un dépôt Git distant depuis internet :
 
-`git --help`
+`git clone {{https://example.com/repo.git}}`
 
-- Afficher l'aide sur une sous-commande Git :
+- Affiche l’état du dépôt local :
 
-`git help {{sous_commande}}`
+`git status`
 
-- Exécuter une sous-commande Git :
+- Sélectionne les modifications à enregistrer :
 
-`git {{sous_commande}}`
+`git add {{[-A|--all]}}`
 
-- Exécuter une sous-commande Git sur un répertoire personnalisé :
+- Enregistre les modifications dans l’historique de versions :
 
-`git -C {{chemin/vers/repertoire}} {{sous_commande}}`
+`git commit {{[-m|--message]}} {{texte_du_message}}`
 
-- Exécuter une sous-commande Git avec un paramètre de configuration spécifique :
+- Envoie les commits locaux vers un dépôt distant :
 
-`git -c '{{cle_param_config}}={{valeur}}' {{sous_commande}}`
+`git push`
+
+- Récupère les modifications effectuées sur un dépôt distant :
+
+`git pull`
+
+- Réinitialise complètement le dépôt à l’état du dernier commit :
+
+`git reset --hard; git clean {{[-f|--force]}}`

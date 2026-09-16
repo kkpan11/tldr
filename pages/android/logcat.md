@@ -11,13 +11,13 @@
 
 `logcat -f {{path/to/file}}`
 
-- Display lines that match a regular expression:
+- Display lines that match a `regex`:
 
-`logcat --regex {{regular_expression}}`
+`logcat --regex {{regex}}`
 
 - Display logs for a specific PID:
 
-`logcat --pid {{pid}}`
+`logcat --pid {{process_id}}`
 
 - Display logs for the process of a specific package:
 

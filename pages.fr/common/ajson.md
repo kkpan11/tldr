@@ -1,7 +1,7 @@
 # ajson
 
 > Exécute un JSONPath sur un objet JSON.
-> Plus d'informations : <https://github.com/spyzhov/ajson>.
+> Plus d'informations : <https://github.com/spyzhov/ajson#console-application>.
 
 - Lis un JSON depuis un fichier et exécute une expression JSONPath spécifique :
 
@@ -13,7 +13,7 @@
 
 - Lis un JSON depuis une URL et évalue une expression JSONPath spécifique :
 
-`ajson '{{avg($..price)}}' '{{https://exemple.com/api/}}'`
+`ajson '{{avg($..price)}}' '{{https://example.com/api/}}'`
 
 - Lis un JSON simple et calcule une valeur :
 

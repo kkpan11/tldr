@@ -1,7 +1,7 @@
 # nm-online
 
 > Ask NetworkManager whether the network is connected.
-> More information: <https://networkmanager.dev/docs/api/latest/nm-online.html>.
+> More information: <https://networkmanager.pages.freedesktop.org/NetworkManager/NetworkManager/nm-online.html>.
 
 - Find out whether the network is connected and print the result to `stdout`:
 
@@ -9,4 +9,4 @@
 
 - Wait `n` seconds for a connection (30 by default):
 
-`nm-online --timeout {{n}}`
+`nm-online {{[-t|--timeout]}} {{n}}`

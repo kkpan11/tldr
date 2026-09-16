@@ -1,7 +1,7 @@
 # beanstalkd
 
 > Un semplice e generico gestore di code di lavoro.
-> Maggiori informazioni: <https://beanstalkd.github.io/>.
+> Maggiori informazioni: <https://manned.org/beanstalkd>.
 
 - Avvia beanstalkd, ascoltando sulla porta 11300:
 
@@ -17,4 +17,4 @@
 
 - Sincronizza con una directory persistente ogni 500 millisecondi:
 
-`beanstalkd -b {{percorso/della/directory_persistente}} -f {{500}}`
+`beanstalkd -b {{percorso/della/directory_persistente}} -f 500`

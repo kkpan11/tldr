@@ -1,12 +1,16 @@
 # Invoke-WebRequest
 
 > Voer een HTTP/HTTPS request uit naar het Web.
-> Dit commando kan alleen gebruikt worden via PowerShell.
+> Opmerking: dit commando kan alleen gebruikt worden via PowerShell.
 > Meer informatie: <https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest>.
 
 - Download de inhoud van een URL naar een bestand:
 
 `Invoke-WebRequest {{http://example.com}} -OutFile {{pad\naar\bestand}}`
+
+- Geef alleen de ruwe HTML-data in plaats van deze te parsen onder Internet Explorer (alleen voor PowerShell 3.0-5.1):
+
+`Invoke-WebRequest {{http://example.com}} -UseBasicParsing`
 
 - Stuur form-gecodeerde gegevens (POST request van het type `application/x-www-form-urlencoded`):
 
@@ -18,7 +22,7 @@
 
 - Stuur gegevens in JSON formaat en specificieer de juiste content-type header:
 
-`Invoke-WebRequest -Body {{'{"name":"bob"}'}} -ContentType 'application/json' {{http://example.com/users/1234}}`
+`Invoke-WebRequest -Body '{{{"name":"bob"}}}' -ContentType 'application/json' {{http://example.com/users/1234}}`
 
 - Stuur een gebruikersnaam en wachtwoord voor een server authenticatie:
 

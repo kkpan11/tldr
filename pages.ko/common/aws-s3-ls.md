@@ -1,7 +1,7 @@
 # aws s3 ls
 
 > AWS S3 버킷, 폴더 (접두사) 및 파일 (객체) 나열.
-> 더 많은 정보: <https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/ls.html>.
+> 더 많은 정보: <https://docs.aws.amazon.com/cli/latest/reference/s3/ls.html>.
 
 - 모든 버킷 나열:
 
@@ -21,7 +21,7 @@
 
 - 주어진 접두사가 있는 경로의 모든 파일 나열:
 
-`aws s3 ls --recursive {{버킷_이름}}/{{경로/대상/디렉터리/}}{{접두사}}`
+`aws s3 ls --recursive {{버킷_이름}}/{{경로/대상/디렉터리}}/{{접두사}}`
 
 - 도움말 표시:
 

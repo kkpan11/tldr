@@ -1,7 +1,7 @@
 # ghead
 
-> Cette commande est un alias de `-p linux head`.
+> Cette commande est un alias de `head` de GNU.
 
-- Voir la documentation de la commande originale :
+- Affiche la documentation de la commande originale :
 
-`tldr -p linux head`
+`tldr {{[-p|--platform]}} linux head`

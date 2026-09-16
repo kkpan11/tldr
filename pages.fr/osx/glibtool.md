@@ -1,7 +1,7 @@
 # glibtool
 
-> Cette commande est un alias de `-p linux libtool`.
+> Cette commande est un alias de `libtool` de GNU.
 
-- Voir la documentation de la commande originale :
+- Affiche la documentation de la commande originale :
 
-`tldr -p linux libtool`
+`tldr {{[-p|--platform]}} linux libtool`

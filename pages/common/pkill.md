@@ -2,7 +2,7 @@
 
 > Signal process by name.
 > Mostly used for stopping processes.
-> More information: <https://www.manned.org/pkill>.
+> More information: <https://manned.org/pkill>.
 
 - Kill all processes which match:
 
@@ -10,16 +10,16 @@
 
 - Kill all processes which match their full command instead of just the process name:
 
-`pkill -f "{{command_name}}"`
+`pkill {{[-f|--full]}} "{{command_name}}"`
 
 - Force kill matching processes (can't be blocked):
 
-`pkill -9 "{{process_name}}"`
+`pkill {{[-9|-SIGKILL]}} "{{process_name}}"`
 
 - Send SIGUSR1 signal to processes which match:
 
-`pkill -USR1 "{{process_name}}"`
+`pkill {{[-10|-SIGUSR1]}} "{{process_name}}"`
 
 - Kill the main `firefox` process to close the browser:
 
-`pkill --oldest "{{firefox}}"`
+`pkill {{[-o|--oldest]}} "{{firefox}}"`

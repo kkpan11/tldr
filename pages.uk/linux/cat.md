@@ -1,7 +1,8 @@
 # cat
 
 > Зчитування та об'єднання файлів.
-> Більше інформації: <https://www.gnu.org/software/coreutils/cat>.
+> Дивіться також: `bat`.
+> Більше інформації: <https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html>.
 
 - Вивести вміст файлу в `stdout`:
 
@@ -21,8 +22,8 @@
 
 - Пронумерувати всі вихідні рядки:
 
-`cat -n {{шлях/до/файлу}}`
+`cat {{[-n|--number]}} {{шлях/до/файлу}}`
 
 - Відобразити недруковані символи та пробіли (з префіксом `M-`, якщо не ASCII):
 
-`cat -v -t -e {{шлях/до/файлу}}`
+`cat {{[-vte|--show-nonprinting -t -e]}} {{шлях/до/файлу}}`

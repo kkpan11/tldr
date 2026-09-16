@@ -2,37 +2,37 @@
 
 > Terminal multiplexer.
 > It allows multiple sessions with windows, panes, and more.
-> See also: `zellij`, `screen`.
+> See also: `zellij`, `screen`, `herdr`.
 > More information: <https://github.com/tmux/tmux>.
 
 - Start a new session:
 
 `tmux`
 
-- Start a new named session:
+- Start a new named [s]ession:
 
-`tmux new -s {{name}}`
+`tmux {{[new|new-session]}} -s {{name}}`
 
 - List existing sessions:
 
-`tmux ls`
+`tmux {{[ls|list-sessions]}}`
 
 - Attach to the most recently used session:
 
-`tmux attach`
+`tmux {{[a|attach]}}`
 
 - Detach from the current session (inside a tmux session):
 
-`<Ctrl>-B d`
+`<Ctrl b><d>`
 
 - Create a new window (inside a tmux session):
 
-`<Ctrl>-B c`
+`<Ctrl b><c>`
 
 - Switch between sessions and windows (inside a tmux session):
 
-`<Ctrl>-B w`
+`<Ctrl b><w>`
 
-- Kill a session by name:
+- Kill a session by [t]arget name:
 
 `tmux kill-session -t {{name}}`

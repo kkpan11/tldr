@@ -9,12 +9,16 @@
 
 - List the commands and the names of the expected events:
 
-`trap -p`
+`trap`
 
 - Execute a command when a signal is received:
 
-`trap 'echo "Caught signal {{SIGHUP}}"' {{SIGHUP}}`
+`trap 'echo "Caught signal {{SIGHUP}}"' {{[HUP|SIGHUP]}}`
 
 - Remove commands:
 
-`trap - {{SIGHUP}} {{SIGINT}}`
+`trap - {{SIGHUP SIGINT ...}}`
+
+- Ignore a signal:
+
+`trap '' {{[INT|SIGINT]}}`

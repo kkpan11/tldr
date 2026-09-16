@@ -1,7 +1,8 @@
 # poweroff
 
 > Matikan sistem.
-> Informasi lebih lanjut: <https://www.manned.org/poweroff>.
+> Lihat juga: `shutdown`.
+> Informasi lebih lanjut: <https://manned.org/poweroff>.
 
 - Matikan sistem:
 
@@ -17,8 +18,8 @@
 
 - Matikan segera tanpa menghubungi manajer sistem:
 
-`poweroff --force --force`
+`poweroff {{[-f|--force]}}`
 
 - Tulis entri wtmp shutdown tanpa mematikan sistem:
 
-`poweroff --wtmp-only`
+`poweroff {{[-w|--wtmp-only]}}`

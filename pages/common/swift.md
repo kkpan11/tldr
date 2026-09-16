@@ -1,11 +1,11 @@
 # swift
 
-> Create, run and build Swift projects.
-> More information: <https://swift.org>.
+> Create, run, and build Swift projects.
+> More information: <https://manned.org/swiftc>.
 
 - Start a REPL (interactive shell):
 
-`swift`
+`swift repl`
 
 - Execute a program:
 
@@ -15,14 +15,10 @@
 
 `swift package init`
 
-- Generate an Xcode project file:
-
-`swift package generate-xcodeproj`
-
 - Update dependencies:
 
 `swift package update`
 
 - Compile project for release:
 
-`swift build -c release`
+`swift build {{[-c|--configuration]}} {{debug|release}}`

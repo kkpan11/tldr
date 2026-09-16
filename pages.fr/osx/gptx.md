@@ -1,7 +1,7 @@
 # gptx
 
-> Cette commande est un alias de `-p linux ptx`.
+> Cette commande est un alias de `ptx` de GNU.
 
-- Voir la documentation de la commande originale :
+- Affiche la documentation de la commande originale :
 
-`tldr -p linux ptx`
+`tldr {{[-p|--platform]}} linux ptx`

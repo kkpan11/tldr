@@ -1,7 +1,7 @@
 # gchcon
 
-> Perintah ini merupakan alias dari `-p linux chcon`.
+> Perintah ini merupakan alias dari GNU `chcon`.
 
 - Tampilkan dokumentasi untuk perintah asli:
 
-`tldr -p linux chcon`
+`tldr {{[-p|--platform]}} linux chcon`

@@ -1,7 +1,7 @@
 # gdd
 
-> Cette commande est un alias de `-p linux dd`.
+> Cette commande est un alias de `dd` de GNU.
 
-- Voir la documentation de la commande originale :
+- Affiche la documentation de la commande originale :
 
-`tldr -p linux dd`
+`tldr {{[-p|--platform]}} linux dd`

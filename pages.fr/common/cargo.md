@@ -1,33 +1,37 @@
 # cargo
 
-> Gestion d'un projet Rust et ses dependences (crates).
-> Certaines sous-commandes comme `cargo build` ont leurs propres documentations.
-> Plus d'informations : <https://doc.rust-lang.org/cargo>.
+> Gestion d'un projet Rust et ses dépendences (crates).
+> Certaines sous-commandes comme `build` ont leur propre documentation.
+> Plus d'informations : <https://doc.rust-lang.org/stable/cargo/>.
 
-- Rechercher des crates :
+- Recherche des crates :
 
 `cargo search {{recherche}}`
 
-- Installer un crate :
+- Installe un crate :
 
 `cargo install {{nom_du_crate}}`
 
-- Lister les crates déjà installés :
+- Liste les crates déjà installés :
 
 `cargo install --list`
 
-- Crée un nouveau binaire ou librairie du projet Rust dans les dossiers spécifiés (ou dans le dossier courant par défaut) :
+- Crée un nouveau binaire ou librairie du projet Rust dans les répertoires spécifiés (ou dans le répertoire actuel par défaut) :
 
-`cargo init --{{bin|lib}} {{chemin/vers/dossier}}`
+`cargo init --{{bin|lib}} {{chemin/vers/répertoire}}`
 
-- Compile le projet Rust dans le dossier courant en utilisant le profil release :
+- Ajoute une dépendance à `Cargo.toml` dans le répertoire actuel :
 
-`cargo build --release`
+`cargo add {{dépendance}}`
 
-- Compiler le projet Rust dans le dossier courant en utilisant le compilateur nightly :
+- Compile le projet Rust dans le répertoire actuel en utilisant le profil release :
 
-`cargo +nightly build`
+`cargo {{[b|build]}} {{[-r|--release]}}`
 
-- Compiler en utilisant un nombre spécifique de threads (par défaut on prend le nombre de coeurs du CPU) :
+- Exécute le binaire compilé (le compile s’il ne l’est pas déjà) :
 
-`cargo build --jobs {{nombre_de_threads}}`
+`cargo {{[r|run]}}`
+
+- Compile le projet Rust dans le répertoire actuel en utilisant le compilateur nightly :
+
+`cargo +nightly {{[b|build]}}`

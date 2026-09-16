@@ -1,16 +1,16 @@
 # grub-mkconfig
 
 > Generate a GRUB configuration file.
-> More information: <https://www.gnu.org/software/grub/manual/grub/html_node/Invoking-grub_002dmkconfig.html>.
+> More information: <https://www.gnu.org/software/grub/manual/grub/grub.html#Invoking-grub_002dmkconfig>.
 
-- Do a dry run and print the configuration to `stdout`:
+- Simulate generating a GRUB configuration and print it to `stdout`:
 
 `sudo grub-mkconfig`
 
 - Generate the configuration file:
 
-`sudo grub-mkconfig --output={{/boot/grub/grub.cfg}}`
+`sudo grub-mkconfig {{[-o|--output]}} {{/boot/grub/grub.cfg}}`
 
 - Display help:
 
-`grub-mkconfig --help`
+`grub-mkconfig {{[-h|--help]}}`

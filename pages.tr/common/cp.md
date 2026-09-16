@@ -1,7 +1,7 @@
 # cp
 
 > Dosyaları ve dizinleri kopyalayın.
-> Daha fazla bilgi için: <https://www.gnu.org/software/coreutils/cp>.
+> Daha fazla bilgi için: <https://www.gnu.org/software/coreutils/manual/html_node/cp-invocation.html>.
 
 - Bir dosyayı başka bir konuma kopyalayın:
 
@@ -27,6 +27,6 @@
 
 `cp -L {{link}} {{dizin/yol/hedef_dizin}}`
 
-- İlk bağımsız değişkeni hedef dizin olarak kullanın ('xargs ... | cp -t <DEST_DIR>' için kullanışlıdır):
+- İlk bağımsız değişkeni hedef dizin olarak kullanın (`xargs ... | cp -t destination_directory` için kullanışlıdır):
 
 `cp -t {{dizin/yol/hedef_dizin}} {{dizin/yol/dosya_veya_dizin1 dizin/yol/dosya_veya_dizin2 ...}}`
